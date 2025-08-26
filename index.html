@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mein Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.Typed) {
+      new Typed('#typed', {
+        strings: ['Frontend Entwicklerin', 'Web Enthusiastin', 'Studentin bei DCI'],
+        typeSpeed: 60,
+        backSpeed: 30,
+        loop: true
+      });
+    }
+  });
+</script>
+</head>
+<body style="scroll-behavior:smooth;">
+<!-- Hero -->
+<header class="hero">
+  <div style="display: flex; align-items: flex-start; justify-content: center; gap: 32px; flex-wrap: wrap;">
+    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+      <img src="f899b3e2-f2fb-44dd-be75-21f9d0a6d235.JPG" alt="Profilbild" class="profile-pic" style="margin: 0; align-self: flex-start;">
+      <span class="contact-info-dark">Valeriia Kovalenko, +4915731180304, Berlin,13409</span>
+      <a href="lebenslauf.pdf" class="btn" download style="margin-top: 16px;">📄 Lebenslauf herunterladen</a>
+    </div>
+    <div style="flex: 1; text-align: center; min-width: 220px;">
+      <h1>Hallo, ich bin Valeriia</h1>
+      <p><span id="typed"></span></p>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: flex-end; min-width: 260px;">
+      <section class="projects" style="width: 100%;">
+        <h2 style="text-align:right;">Projekte</h2>
+        <div class="project-grid" style="flex-direction: column; align-items: flex-end;">
+          <div class="project-card" style="margin-bottom: 16px;">
+            <h3>Projekt 1</h3>
+            <p>Kurze Beschreibung des Projekts.</p>
+            <a href="https://github.com/Valeriia149" target="_blank">GitHub</a>
+          </div>
+          <div class="project-card">
+            <h3>Projekt 2</h3>
+            <p>Beschreibung zu Projekt 2.</p>
+            <a href="#" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</header>
+
+<!-- Über mich -->
+<section class="about" style="margin-top:-32px;">
+<h2>Über mich</h2>Ich bin 40 Jahre alt und lebe in Berlin, Deutschland.
+Derzeit absolviere ich eine Weiterbildung im Bereich Web Development, um meine Kenntnisse in modernen Technologien wie HTML, CSS, JavaScript und Git zu vertiefen.
+
+Besonders wichtig ist mir, Webseiten zu entwickeln, die nicht nur funktional, sondern auch benutzerfreundlich und visuell ansprechend sind.
+Durch meine Lernbereitschaft, meine Motivation und meine Fähigkeit, mich schnell in neue Themen einzuarbeiten, bin ich überzeugt, einen wertvollen Beitrag in einem Team leisten zu können.
+
+Mein Ziel ist es, als Frontend-Entwicklerin in einem modernen Unternehmen zu arbeiten, spannende Projekte umzusetzen und mich kontinuierlich weiterzuentwickeln.
+
+
+</section>
+
+<!-- Fähigkeiten -->
+<section class="skills">
+  <h2>Fähigkeiten</h2>
+  <div class="badges">
+    <span class="badge html">HTML</span>
+    <span class="badge css">CSS</span>
+    <span class="badge js">JavaScript</span>
+    <span class="badge github">GitHub</span>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<footer class="contact">
+<h2>Kontakt</h2>
+<div class="social-icons">
+  <a href="https://github.com/Valeriia149" target="_blank" title="GitHub"><img src="github.svg" alt="GitHub"></a>
+  <a href="mailto:deineemail@gmail.com" title="E-Mail"><img src="mail.svg" alt="E-Mail"></a>
+  <!-- Weitere Icons wie LinkedIn, Instagram etc. können ergänzt werden -->
+</div>
+<form class="contact-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">E-Mail:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="nachricht">Nachricht:</label>
+  <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
+
+  <button type="submit">Nachricht senden</button>
+</form>
+</footer>
+</body>
+</html>
